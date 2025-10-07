@@ -1,0 +1,112 @@
+# The name of your Flutter project
+name: flutter_application_1
+
+# A short description of your project. This is optional for local apps.
+description: "A new Flutter project."
+
+# Prevents accidental publishing to pub.dev (remove this if you plan to publish)
+publish_to: 'none'
+
+# The version number and build number of your application.
+# Format: major.minor.patch+buildNumber
+# Example: 1.0.0+1 means version 1.0.0 with build number 1
+version: 1.0.0+1
+
+# The Dart SDK version constraint — ensures the code runs with Flutter's Dart SDK 3.8.1 or newer.
+environment:
+  sdk: ^3.8.1
+
+# -------------------------------------------------------------------
+# DEPENDENCIES SECTION
+# -------------------------------------------------------------------
+# These are the packages your Flutter app depends on to work.
+
+dependencies:
+  # Flutter SDK dependency
+  flutter:
+    sdk: flutter
+
+  # ---------------------------------------------------------------
+  # DATABASE & LOCAL STORAGE DEPENDENCIES
+  # ---------------------------------------------------------------
+  # sqflite → SQLite database package for Flutter (used for local storage of members, payments, etc.)
+  sqflite: ^2.0.0+4
+
+  # path_provider → Helps you find commonly used directories on the device (like documents directory)
+  path_provider: ^2.0.11
+
+  # path → Helps in working with file paths easily
+  path: ^1.8.3
+
+  # ---------------------------------------------------------------
+  # UTILITIES & HELPER PACKAGES
+  # ---------------------------------------------------------------
+  # intl → For date and time formatting (used in showing joined date, payment date, etc.)
+  intl: ^0.18.1
+
+  # Cupertino Icons → iOS-style icons for your app
+  cupertino_icons: ^1.0.8
+
+  # fluttertoast → For showing short messages/toasts
+  fluttertoast: ^8.2.12
+
+  # shared_preferences → To store small key-value data locally (like login session, settings)
+  shared_preferences: ^2.5.3
+
+  # audioplayers → To play audio (if you want sound effects like “payment successful”)
+  audioplayers: ^6.5.1
+
+  # http → For network requests (if you later integrate online APIs)
+  http: ^1.5.0
+
+# -------------------------------------------------------------------
+# DEVELOPMENT DEPENDENCIES
+# -------------------------------------------------------------------
+# These are used only during development and testing.
+dev_dependencies:
+  # flutter_test → Contains tools for testing Flutter apps
+  flutter_test:
+    sdk: flutter
+
+  # flutter_lints → Provides recommended lint rules for writing clean Dart code
+  flutter_lints: ^5.0.0
+
+# -------------------------------------------------------------------
+# FLUTTER SECTION
+# -------------------------------------------------------------------
+flutter:
+  # Ensures Material Icons are included so you can use `Icons.*` in your app.
+  uses-material-design: true
+
+  # -----------------------------------------------------------------
+  # ASSETS SECTION
+  # -----------------------------------------------------------------
+  # Add image, sound, or other assets here.
+  # These files will be bundled with your application package.
+  #
+  # Example: to load an image, place it in assets/images/ and use:
+  # Image.asset('assets/images/logo.png')
+  #
+  assets:
+    - assets/images/
+
+  # -----------------------------------------------------------------
+  # FONTS SECTION (OPTIONAL)
+  # -----------------------------------------------------------------
+  # To add custom fonts, uncomment and modify the following section:
+  #
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # After adding new assets or fonts, run:
+  #   flutter pub get
+  # -----------------------------------------------------------------
